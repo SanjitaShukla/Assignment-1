@@ -1,0 +1,33 @@
+:root{
+  --lav-50:#f6f5fb; --lav-100:#eeecf7; --lav-200:#ded8f0; --lav-300:#c5bce6;
+  --lav-400:#a08dd6; --lav-500:#7e64c6; --lav-600:#6649b3; --lav-700:#543a98;
+  --lav-800:#463279; --lav-900:#392a60; --text:#1f1235; --muted:#6b6a75;
+  --green:#1b8f3b; --red:#c0392b; --bg:#f8f7fc; --card:#ffffff;
+}
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:var(--text)}
+.container{max-width:960px;margin:24px auto;padding:0 16px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--lav-700);color:white}
+.topbar a{color:white;text-decoration:none;margin:0 8px}
+.brand{font-weight:800}
+.footer{padding:24px;text-align:center;color:var(--muted)}
+.table{width:100%;border-collapse:collapse;margin-top:16px;background:var(--card);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.table th,.table td{padding:12px 10px;border-bottom:1px solid var(--lav-100)}
+.table thead{background:var(--lav-100)}
+.right{text-align:right}
+.debit{color:var(--red);font-weight:700}
+.credit{color:var(--green);font-weight:700}
+.btn{background:var(--lav-600);color:#fff;border:none;padding:10px 14px;border-radius:10px;cursor:pointer}
+.btn:hover{background:var(--lav-700)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.alert{background:#fff0f0;color:var(--red);padding:10px;border-radius:8px;margin:8px 0}
+.form{display:grid;gap:8px;background:var(--card);padding:16px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.form-inline{display:flex;gap:8px;align-items:center;margin:10px 0}
+input,select{padding:10px;border:1px solid var(--lav-200);border-radius:10px;background:white}
+.muted{color:var(--muted)}
+.auth{display:grid;place-items:center;min-height:100vh;background:linear-gradient(135deg,var(--lav-100),var(--lav-300))}
+.auth-card{width:360px;max-width:92vw;background:var(--card);padding:24px;border-radius:16px;box-shadow:0 20px 60px rgba(84,58,152,.25)}
+.auth .btn.full{width:100%}
+.logout{background:transparent;padding:6px 10px;border-radius:8px}
+.logout:hover{background:rgba(255,255,255,.15)}
